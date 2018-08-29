@@ -1,0 +1,19 @@
+<!DOCTYPE=html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Help Page</title>
+</head>
+
+<body>
+	{{>header}} 
+	  {{#getListOfRepos}}
+   	 <li>{{this}}</li>
+ 	 {{/getListOfRepos}}
+
+
+</body>
+{{>footer}}
+
+</html>
