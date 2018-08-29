@@ -4,7 +4,7 @@ const fs = require('fs');
 
 var app = express();
 
-
+const port = process.env.PORT || 3000;
 
 app.use((req, res, next) => {
 	var now = new Date().toString();
@@ -58,4 +58,6 @@ app.get('/bad', (req, res) => {
 
 })
 
-app.listen(3000);
+app.listen(port,()=>{
+	console.log(`server listing on port ${port}`);
+});
